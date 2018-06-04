@@ -19,10 +19,8 @@ process.exit(0);
 
 /**/
 function numToString(num, temp) {
-  if (num) {
-    mod = num % 10;
-    return num + ' ' + (num > 10 && num < 20 || mod == 0 || mod >= 5 ?
-                        temp.many : (mod == 1 ? temp.one : temp.some));
-  }
+  mod = num % 10;
+  return num + ' ' + (num > 10 && num < 20 || mod == 0 || mod >= 5 ?
+                      temp.many : (mod == 1 ? temp.one : temp.some));
 }
 
