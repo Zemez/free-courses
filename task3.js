@@ -23,4 +23,3 @@ function numToString(num, temp) {
   return num + ' ' + (num > 10 && num < 20 || mod == 0 || mod >= 5 ?
                       temp.many : (mod == 1 ? temp.one : temp.some));
 }
-
