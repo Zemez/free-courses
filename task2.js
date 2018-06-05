@@ -6,11 +6,11 @@ var s = -1;
 
 if (a.length === b.length) {
   for (let c = 0; c < a.length; c++) {
-	  if (a.every((x, i) => x === b[i])) {
-	    s = c;
-	    break;
+    if (a.every((x, i) => x === b[i])) {
+      s = c;
+      break;
     }
-	  a.push(a.shift());
+    a.push(a.shift());
   }
 }
 
