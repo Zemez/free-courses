@@ -6,13 +6,12 @@ s = -1;
 
 if a.length == b.length
   a.each_index do |c|
-	  if a == b
-	    s = c
-	    break
-	  end #if
-	  a.push(a.shift)
-	end #do
+    if a == b
+      s = c
+      break
+    end #if
+    a.push(a.shift)
+  end #do
 end #if
 
 puts s > a.length - s ? a.length - s : s
-
