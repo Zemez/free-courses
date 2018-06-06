@@ -21,5 +21,5 @@ time_h = (time / 3600).floor
 
 puts (time_h.nonzero? ? num_to_string(time_h, STR_H) + ' ' : '') +
      (time_m.nonzero? ? num_to_string(time_m, STR_M) + ' ' : '') +
-                        num_to_string(time_s, STR_S)
+     (time_s.nonzero? ? num_to_string(time_s, STR_S) : '')
 
